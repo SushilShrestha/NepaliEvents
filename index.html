@@ -2,53 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nepali Events for iCalendar and Google Calendar</title>
+    <title>Nepali Events iCalendar for Google Calendar</title>
     <style>
         body {
-            font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
             padding: 20px;
-        }
-        hr.fancy-line {
-          border: 0;
-          height: 1px;
-          position: relative;
-          margin: 0.5em 0;
-        }
-        hr.fancy-line:before {
-          top: -0.5em;
-          height: 1em;
-        }
-        hr.fancy-line:after {
-          content: '';
-          height: 0.5em;
-          top: -8px; /*or bottom:0; */
-        }
-        hr.fancy-line:before,
-        hr.fancy-line:after {
-          content: '';
-          position: absolute;
-          width: 100%;
-        }
-        hr.fancy-line,
-        hr.fancy-line:before {
-          background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
-          background: -webkit-gradient(radial, center center, 0px, center center, 75%, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(75%, rgba(0, 0, 0, 0)));
-          background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
-          background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
-          background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
-          background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 75%);
-        }
-        body,
-        hr.fancy-line:after {
-          background: #f4f4f4;
         }
         .heading {
             text-align: center;
         }
+        .content {
+            width: 1000px;
+            margin:auto;
+            padding: 20px;
+            border: 1px solid #f0f0f0;
+            -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
+            -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.5);
+            box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.5);
+        }
+        .highlightBlock{
+            margin: 10px;
+            border-left: solid orange;
+            padding: 10px;
+            line-height: 150%;
+            font-family: sans-serif;
+        }
+        p, ol{
+            margin: 10px;
+            padding: 10px;
+            font-family: sans-serif;
+            line-height: 150%
+        }
+        hr{
+            border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
     </style>
 </head>
 <body>
-    <h1 class="heading">Nepali Calendar Events for iCalendar and Google Calendar</h1>
-    <hr class="fancy-line"></hr>
+
+    <div class="content">
+        <h1 class="heading">Nepali Events for Google Calendar and Calendar apps</h1>
+        <hr/>
+        <p>
+            Plenty of online Nepali Calendars are available presently but there is a gap between making those events available
+            to the popular calendar applications like Google Calendar and Calendar app on mac. Google Calendar and Calendar on mac have a nice
+            way to sync the 3rd party calendar events. This project is to provide a Internet Calendaring api for major events
+            in Nepal.
+        </p>
+        <p class="highlightBlock">
+            There are two types of iCalendar api available presently.<br />
+            Nepali Dates api available on <a href="http://shresthasushil.com.np/NepaliEvents/Nepali%20Dates.ics"> http://shresthasushil.com.np/NepaliEvents/Nepali%20Dates.ics</a><br />
+            Nepali Events api available on <a href="http://shresthasushil.com.np/NepaliEvents/Nepali%20Events.ics">http://shresthasushil.com.np/NepaliEvents/Nepali%20Events.ics</a><br/>
+        </p>
+
+        <h2>Subscribe to Nepali events on Calendar app on Mac</h2>
+        <ol>
+            <li>Go to File > New Calendar Subscription</li>
+            <li>Enter http://shresthasushil.com.np/NepaliEvents/Nepali%20Events.ics on Calendar URL.</li>
+            <li>Click subscribe.</li>
+            <li>Provide a name for the subscription and press Ok</li>
+        </ol>
+
+        <h2>Subscribe to Nepali events on Google Calendar</h2>
+        <ol>
+            <li>Go to Add Calendar > From URL</li>
+            <li>Enter http://shresthasushil.com.np/NepaliEvents/Nepali%20Events.ics on Calendar URL.</li>
+            <li>Click Add Calendar.</li>
+        </ol>
+    </div>
 </body>
 </html>
