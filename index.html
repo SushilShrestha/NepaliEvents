@@ -2,83 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nepali Events iCalendar for Google Calendar</title>
-    <style>
-        body {
-            padding: 20px;
-            background-image: url("https://www.drukair.com.sg/media/1016/kathmandu-nepal.jpg?AspxAutoDetectCookieSupport=1");
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-        .heading {
-            text-align: center;
-        }
-        .content {
-            width: 1000px;
-            margin:auto;
-            padding: 20px;
-            background: white;
-            border: 1px solid #f0f0f0;
-            -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
-            -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.5);
-            box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.5);
-        }
-        .highlightBlock{
-            margin: 10px;
-            border-left: solid orange;
-            padding: 10px;
-            line-height: 150%;
-            font-family: sans-serif;
-        }
-        p, ol{
-            margin: 10px;
-            padding: 10px;
-            font-family: sans-serif;
-            line-height: 150%
-        }
-        hr{
-            border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nepali Calendar for Google Calendar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
 </head>
 <body>
+    <section class="section">
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                        Nepali Events for Google Calendar and Calendar apps
+                    </h1>
+                    <h2 class="subtitle">
+                        List of nepali events for Calendar apps
+                    </h2>
+                    <div>Plenty of online Nepali Calendars are available presently but there is a gap between making those events available to the popular calendar applications like Google Calendar and Calendar app on mac. Google Calendar and Calendar on mac have a nice way to sync the 3rd party calendar events. This project is to provide a Internet Calendaring api for major events in Nepal.</div><br />
+                    <div>This project aims to maintain a calendar events of Nepal that can be imported to popular calendar apps such as Google Calendar and Calendar app on Mac.
+                        The Events provided through this api is based on data from <a href="https://www.hamropatro.com/">HamroPatro</a></div>
+                    <br />
 
-    <div class="content">
-        <h1 class="heading">Nepali Events for Google Calendar and Calendar apps</h1>
-        <hr/>
-        <p>
-            Plenty of online Nepali Calendars are available presently but there is a gap between making those events available
-            to the popular calendar applications like Google Calendar and Calendar app on mac. Google Calendar and Calendar on mac have a nice
-            way to sync the 3rd party calendar events. This project is to provide a Internet Calendaring api for major events
-            in Nepal.
-        </p>
-        <p class="highlightBlock">
-		<h3 class="heading">The events data are obtained from the <a href="https://www.hamropatro.com">hamropatro</a> website.</h3>
-            There are two types of iCalendar api available presently.<br />
-            Nepali Dates api available on <a href="http://shresthasushil.com.np/NepaliEvents/Nepali%20Dates.ics"> http://shresthasushil.com.np/NepaliEvents/Nepali%20Dates.ics</a><br />
-            Nepali Events api available on <a href="http://shresthasushil.com.np/NepaliEvents/Nepali%20Events.ics">http://shresthasushil.com.np/NepaliEvents/Nepali%20Events.ics</a><br/>
-        </p>
+                    <h1 class="title">
+                        Installation
+                    </h1>
+                    <h2 class="subtitle">
+                        Subscribe to Nepali events on Calendar app on Mac
+                    </h2>
+                    <div class="content">
+                        <ol>
+                            <li>Go to File > New Calendar Subscription</li>
+                            <li>Enter <a href="http://shresthasushil.com.np/NepaliEvents/Nepali%20Events.ics">http://shresthasushil.com.np/NepaliEvents/Nepali%20Events.ics</a> on Calendar URL.</li>
+                            <li>Click subscribe.</li>
+                            <li>Provide a name for the subscription and press Ok</li>
+                        </ol>
+                         <video width="600" controls>
+                              <source src="assets/calendar.mov" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video>
+                    </div>
 
-        <h2>Subscribe to Nepali events on Calendar app on Mac</h2>
-        <ol>
-            <li>Go to File > New Calendar Subscription</li>
-            <li>Enter http://shresthasushil.com.np/NepaliEvents/Nepali%20Events.ics on Calendar URL.</li>
-            <li>Click subscribe.</li>
-            <li>Provide a name for the subscription and press Ok</li>
-        </ol>
+                    <h2 class="subtitle">
+                        Subscribe to Nepali events on Google Calendar
+                    </h2>
+                    <div class="content">
+                    <ol>
+                        <li>Go to Add Calendar > From URL</li>
+                        <li>Enter<a href="http://shresthasushil.com.np/NepaliEvents/Nepali%20Events.ics">http://shresthasushil.com.np/NepaliEvents/Nepali%20Events.ics</a> on Calendar URL.</li>
+                        <li>Click Add Calendar.</li>
+                    </ol>
+                     <video width="600" controls>
+                      <source src="assets/googlecalendar.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                </div>
 
-        <h2>Subscribe to Nepali events on Google Calendar</h2>
-        <ol>
-            <li>Go to Add Calendar > From URL</li>
-            <li>Enter http://shresthasushil.com.np/NepaliEvents/Nepali%20Events.ics on Calendar URL.</li>
-            <li>Click Add Calendar.</li>
-        </ol>
+                    <h3 class="title is-3">Calendars</h3>
+                    <div class="content">
+                        <ul>
+                            <li>Nepali Dates api available through <a href="http://shresthasushil.com.np/NepaliEvents/Nepali%20Dates.ics"> http://shresthasushil.com.np/NepaliEvents/Nepali%20Dates.ics</a></li>
+                            <li>Nepali Events api available through <a href="http://shresthasushil.com.np/NepaliEvents/Nepali%20Events.ics">http://shresthasushil.com.np/NepaliEvents/Nepali%20Events.ics</a></li>
+                        </ul>
+                        <article class="message is-dark">
+                            <div class="message-body">
+                                Also found a Google maintained calendar for Nepali events. If you prefer less verbose calendar events check the calendar events from Google. <a href="https://calendar.google.com/calendar/ical/en.np%23holiday%40group.v.calendar.google.com/public/basic.ics">https://calendar.google.com/calendar/ical/en.np%23holiday%40group.v.calendar.google.com/public/basic.ics</a>
+                            </div>
+                        </article>
 
 
-        <p>Also found a Google maintained ical for Nepali events. If you prefer less verbose calendar events check the calendar events from Google. <a href="https://calendar.google.com/calendar/ical/en.np%23holiday%40group.v.calendar.google.com/public/basic.ics">https://calendar.google.com/calendar/ical/en.np%23holiday%40group.v.calendar.google.com/public/basic.ics</a></p>
+                        <article class="message is-warning">
+                            <div class="message-body">
+                                It might be possible that calendar events go missing due to change in content pattern or failure to update the repo. Please feel free to <a href="https://github.com/SushilShrestha/NepaliEvents/issues">drop the issue</a> or <a href="https://github.com/SushilShrestha/NepaliEvents/pulls">send a pull request</a>
 
-    </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
 </body>
 </html>

@@ -15,11 +15,11 @@ The Events provided through this api is based on data from [HamroPatro](https://
 
 ## Installation
 
-###### Google Calendar
+#### Google Calendar
 ![](assets/google-calendar.gif)
 
 
-###### Calendar app on macOS
+#### Calendar app on macOS
 ![](assets/mac-calendar.gif)
 
 [Detail](http://shresthasushil.com.np/NepaliEvents/)
